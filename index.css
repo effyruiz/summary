@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #FFF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+    font-family: 'Hanken Grotesk', sans-serif; 
+}
+
+.result {
+    width: 100%;
+    height: auto;
+    color: #FFF;
+    background: rgb(50,0,184);
+    background: linear-gradient(0deg, rgba(50,0,184,1) 23%, rgba(51,31,197,0.8562018557422969) 58%, rgba(86,51,232,1) 92%);
+    text-align: center;
+    border-radius: 1rem;
+    margin: none;
+    padding: 1rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+.circle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    color: #fff;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(50,0,184,0.9766500350140056) 41%, rgba(86,51,232,1) 92%);
+  }
+
+
+  .result .circle span {
+    font-size: small;
+    opacity: 40%;
+    font-weight: 500;
+  
+}
+
+.result p {
+    font-size: small;
+    opacity: 40%;
+    font-weight: 500;
+}
+
+.summary {
+    width: 100%
+}
+
+.summary span {
+    font-size: small;
+    opacity: 29%;
+    text-align: right;
+}
+
+.summary p {
+    text-align: right;
+    font-weight: 500;
+    color: black;
+}
+
+.summary h4 {
+    font-weight: 700;
+}
+
+
+.summary-1 {
+    background:hsl(0, 74%, 95%);
+    color:hsl(0, 100%, 67%);
+    border-radius: 1rem;
+}
+
+
+
+
+
+/* When the browser is at least 425px and above */
+@media screen and (min-width: 425px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container .result .container.summary {
+        width: 100%;
+    }
+  }
