@@ -14,47 +14,61 @@
 </head>
 
 <body>
-
-    <div class="container">
-
+    <div class="container">   
         <div class="result">
-
-            <h3>Your Result</h3>
+            <h3 class="main-title">Your Result</h3>
 
             <div class="circle">
-                <h1>76</h1>
-                <span>of 100</span>
+                <h1 class="circle-score">76<span>of 100</span></h1>
             </div>
-              <h2>Great</h2>
-            <p>You scored higher than 65% of the people who have taken these tests.</p>
+
+            <div class="description">
+                <h2 class="description-title">Great</h2>
+                <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
         </div>
 
-        <div class="summary">
+        <div class="summary-wrapper">
+            <h3 class="main-title">Summary</h3>
 
-            <h3>Summary</h3>
+            <div id="summary-1" class="summary">
+                <div class="summary-header">
+                    <img src="icon-reaction.svg" />
+                    <h4>Reaction</h4>
+                </div>
 
-            <div class="summary-1">
-                <h4><img src="icon-reaction.svg"> Reaction</h4>
-                <p>80</p><span>/100</span>
+                <p class="summary-score">80<span>/100</span></p>
             </div>  
 
-            <div class="summary-2">
-                <h4><img src="icon-memory.svg"> Memory <p>92</p><span>/100</span></h4> 
+            <div id="summary-2" class="summary">
+                <div class="summary-header">
+                    <img src="icon-memory.svg" />
+                    <h4>Memory</h4> 
+                </div>
+
+                <p class="summary-score">92<span>/100</span></p>
             </div>
 
-            <div class="summary-3">
-                <h4><img src="icon-verbal.svg"> Verbal <p>61</p><span>/100</span></h4>
+            <div id="summary-3" class="summary">
+                <div class="summary-header">
+                    <img src="icon-verbal.svg" />
+                    <h4>Verbal</h4>
+                </div>
                 
+                <p class="summary-score">61<span>/100</span></p>
             </div>
 
-            <div class="summary-4">
-                <h4><img src="icon-visual.svg"> Visual</h4>
-                <p>72</p><span>/100</span>
+            <div id="summary-4" class="summary">
+                <div class="summary-header">
+                    <img src="icon-visual.svg" />
+                    <h4>Visual</h4>
+                </div>
+
+                <p class="summary-score">72<span>/100</span></p>
             </div>
 
-            <button>Continue</button>
+            <button class="btn">Continue</button>
         </div>
-
     </div>
 </body>
 </html>
