@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Hanken Grotesk', sans-serif; 
+    letter-spacing: 0.005em;
 }
 
 .result {
@@ -42,6 +43,7 @@ body {
     color: #fff;
     flex-direction: column;
     background: linear-gradient(0deg, rgba(50,0,184,0.9766500350140056) 41%, rgba(86,51,232,1) 92%);
+    border-style: groove #000000f9;
   }
 
 .circle-score {
@@ -59,7 +61,7 @@ body {
 }
 
 .result .description {
-    font-size: small;
+    font-size:medium;
     font-weight: 500;
 }
 
@@ -72,6 +74,7 @@ body {
     display: flex;
     flex-flow: column;
     padding: 1rem;
+    font-size:medium;
 }
 
 .summary-wrapper .summary {
@@ -79,26 +82,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: lightgray;
-    border-radius: 1rem;
-    padding: 1rem;
+    border-radius: 15px;
+    padding: 1rem 0.8rem 1rem 0.8rem;
     margin-bottom: 1rem;
+    border-style: groove;
+    border-top-width: 0.5;
+    border-bottom-width: 0.5;
+    
 }
+
+.main-title {
+    font-weight: 600;
+    opacity: 70%;
+    margin-top: 0;
+    font-size: large;
+}
+
 
 .summary-wrapper #summary-1 {
-
+    color: #ff5757;
+    background-color: #fccfcf;
 }
 
+
+
 .summary-wrapper #summary-2 {
-    
+    color: #ffb01f;
+    background-color: #fceed4;
 }
 
 .summary-wrapper #summary-3 {
-    
+    color: #00bd91;
+    background-color:#d8f8f0;
 }
 
 .summary-wrapper #summary-4 {
-    
+    color: #1125d4;
+    background-color: #c0c5f4;
 }
 
 .summary-wrapper .summary .summary-header {
@@ -107,6 +127,27 @@ body {
 
 .summary-wrapper .summary .summary-header img {
     margin-right: 1rem;
+}
+
+.summary-wrapper .summary-score {
+    color: black;
+    word-spacing: 0.5em;
+}
+
+.btn {
+    color: #fff;
+    background-color: #303b5a;
+    padding: 1.3rem;
+    border-radius: 40px;
+    border-style: none;
+    font-family: 'Hanken Grotesk', sans-serif; 
+    font-weight: 700;
+    font-size: medium;
+}
+
+.summary-score span {
+    opacity: 25%;
+    font-weight: 500;
 }
 
 /* When the browser is at least 425px and above */
@@ -139,5 +180,9 @@ body {
 
     .summary-wrapper {
         justify-content: flex-start;
+    }
+
+    .btn:active {
+        background: linear-gradient(0deg, rgba(50,0,184,0.9766500350140056) 41%, rgba(86,51,232,1) 92%);
     }
 }
