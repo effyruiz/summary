@@ -16,6 +16,9 @@ body {
     flex-wrap: wrap;
     font-family: 'Hanken Grotesk', sans-serif; 
     letter-spacing: 0.005em;
+    -webkit-box-shadow: 31px 46px 295px -29px rgba(87,98,184,1);
+    -moz-box-shadow: 31px 46px 295px -29px rgba(87,98,184,1);
+    box-shadow: 31px 46px 295px -29px rgba(87,98,184,1);
 }
 
 .result {
@@ -61,12 +64,13 @@ body {
 }
 
 .result .description {
-    font-size:medium;
+    font-size: larger;
     font-weight: 500;
 }
 
 .result .description p {
     opacity: 40%;
+    font-size: 18px;
 }
 
 .summary-wrapper {
@@ -74,7 +78,7 @@ body {
     display: flex;
     flex-flow: column;
     padding: 1rem;
-    font-size:medium;
+    font-size: 18px;
 }
 
 .summary-wrapper .summary {
@@ -83,11 +87,8 @@ body {
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
-    padding: 1rem 0.8rem 1rem 0.8rem;
+    padding: 0.3rem 0.7rem;
     margin-bottom: 1rem;
-    border-style: groove;
-    border-top-width: 0.5;
-    border-bottom-width: 0.5;
     
 }
 
@@ -95,31 +96,38 @@ body {
     font-weight: 600;
     opacity: 70%;
     margin-top: 0;
-    font-size: large;
+    font-size: 23px;
 }
 
 
 .summary-wrapper #summary-1 {
     color: #ff5757;
     background-color: #fccfcf;
+  
 }
+
 
 
 
 .summary-wrapper #summary-2 {
     color: #ffb01f;
-    background-color: #fceed4;
+    background-color: #f6f1da;
+
 }
 
 .summary-wrapper #summary-3 {
     color: #00bd91;
     background-color:#d8f8f0;
+
 }
+
 
 .summary-wrapper #summary-4 {
     color: #1125d4;
     background-color: #c0c5f4;
+
 }
+
 
 .summary-wrapper .summary .summary-header {
     display: flex;
@@ -164,7 +172,8 @@ body {
     .container {
         width: 55vw;
         display: flex;
-        flex-flow: row;       
+        flex-flow: row; 
+        border-radius: 40px;      
     }
 
     .result {
